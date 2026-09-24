@@ -4,6 +4,10 @@ using namespace std;
 int main(){
     int n;
     cin >> n;
-    cout << (n == pow(n/1000, 4) + pow(n/100%10, 4) + pow(n/10%10, 4) + pow(n%10, 4) ? "yes" : "no") << endl;
+    if (abs(n) % 10 == 4){
+        printf("no\n");
+    }else{
+        printf("yes\n");
+    }
     return 0;
 }
